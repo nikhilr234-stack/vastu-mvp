@@ -12,9 +12,11 @@ export default function Home() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        facing: "east",
-        bedrooms: 2,
-        plot: { width: 30, height: 40 },
+      facing: "east",
+  bedrooms: 2,
+  plot: { width: 30, height: 40 },
+  options: {
+    pooja: true,
       }),
     });
 
