@@ -12,15 +12,15 @@ export default function Home() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-      facing: "east",
+  facing: "east",
   bedrooms: 2,
   plot: { width: 30, height: 40 },
   options: {
     pooja: true,
-      }),
-    });
+  },
+}),
 
-    const data = await res.json();
+  const data = await res.json();
     setOutput(data);
   }
 
